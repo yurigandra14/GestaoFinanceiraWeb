@@ -2,8 +2,8 @@ import { SideNavItems, SideNavSection } from '@modules/navigation/models';
 
 export const sideNavSections: SideNavSection[] = [
     {
-        text: 'CORE',
-        items: ['dashboard'],
+        text: 'ADMINISTRATIVO',
+        items: ['dashboard','categoria','fornCli','dataVencPadrao','formasPagamento'],
     },
     {
         text: 'INTERFACE',
@@ -13,12 +13,36 @@ export const sideNavSections: SideNavSection[] = [
         text: 'ADDONS',
         items: ['charts', 'tables'],
     },
+    {
+        text: 'ADDONS',
+        items: ['charts', 'tables'],
+    }
 ];
 
 export const sideNavItems: SideNavItems = {
     dashboard: {
         icon: 'tachometer-alt',
         text: 'Dashboard',
+        link: '/dashboard',
+    },
+    categoria:{
+        icon: 'tachometer-alt',
+        text: 'Categorias',
+        link: '/dashboard',
+    },
+    fornCli:{
+        icon: 'tachometer-alt',
+        text: 'Fornecedor / Cliente',
+        link: '/dashboard',
+    },
+    dataVencPadrao:{
+        icon: 'tachometer-alt',
+        text: 'Dia Vencimento Padrão',
+        link: '/dashboard',
+    },
+    formasPagamento:{
+        icon: 'tachometer-alt',
+        text: 'Formas de Pagamento',
         link: '/dashboard',
     },
     layouts: {
@@ -77,12 +101,12 @@ export const sideNavItems: SideNavItems = {
     },
     charts: {
         icon: 'chart-area',
-        text: 'Charts',
+        text: 'Receitas',
         link: '/charts',
     },
     tables: {
         icon: 'table',
-        text: 'Tables',
+        text: 'Despesas',
         link: '/tables',
     },
 };
