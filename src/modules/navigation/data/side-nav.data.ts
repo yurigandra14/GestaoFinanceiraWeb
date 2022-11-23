@@ -5,18 +5,18 @@ export const sideNavSections: SideNavSection[] = [
         text: 'ADMINISTRATIVO',
         items: ['dashboard','categoria','fornCli','dataVencPadrao','formasPagamento'],
     },
+    // {
+    //     text: 'INTERFACE',
+    //     items: ['layouts', 'pages'],
+    // },
     {
-        text: 'INTERFACE',
-        items: ['layouts', 'pages'],
-    },
-    {
-        text: 'ADDONS',
+        text: 'CONTAS',
         items: ['charts', 'tables'],
     },
-    {
-        text: 'ADDONS',
-        items: ['charts', 'tables'],
-    }
+    // {
+    //     text: 'ADDONS',
+    //     items: ['charts', 'tables'],
+    // }
 ];
 
 export const sideNavItems: SideNavItems = {
@@ -26,22 +26,22 @@ export const sideNavItems: SideNavItems = {
         link: '/dashboard',
     },
     categoria:{
-        icon: 'tachometer-alt',
+        icon: 'list',
         text: 'Categorias',
         link: '/dashboard',
     },
     fornCli:{
-        icon: 'tachometer-alt',
+        icon: 'truck',
         text: 'Fornecedor / Cliente',
         link: '/dashboard',
     },
     dataVencPadrao:{
-        icon: 'tachometer-alt',
+        icon: 'calendar',
         text: 'Dia Vencimento Padrão',
         link: '/dashboard',
     },
     formasPagamento:{
-        icon: 'tachometer-alt',
+        icon: 'money-bill-wave',
         text: 'Formas de Pagamento',
         link: '/dashboard',
     },
@@ -100,12 +100,12 @@ export const sideNavItems: SideNavItems = {
         ],
     },
     charts: {
-        icon: 'chart-area',
+        icon: 'receipt',
         text: 'Receitas',
         link: '/charts',
     },
     tables: {
-        icon: 'table',
+        icon: 'wallet',
         text: 'Despesas',
         link: '/tables',
     },
